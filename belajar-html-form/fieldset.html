@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Identitas</legend>
+                <label for="name">Nama :</label><input type="text" name="name" id="name"><br>
+                <label for="email">Email :</label><input type="email" name="email" id="email"><br>
+                <label for="telepon">Telepon :</label><input type="tel" name="telepon" id="telepon" pattern="[0-9]{5,20}"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Alamat</legend>
+            <label for="alamat_lengkap">Alamat Lengkap :</label><input type="text" name="alamat_lengkap" id="alamat_lengkap"><br>
+            <label for="kota">Kota :</label><input type="text" name="kota" id="kota"><br>
+            <label for="provinsi">Provinsi</label><select name="provinsi" id=""provinsi>
+                <option value="jawa_barat">Jawa Barat</option>
+                <option value="jawa_timur" selected>Jawa Timur</option>
+                <option value="jawa_tengah">Jawa Tengah</option>
+            </select>
+        </fieldset>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

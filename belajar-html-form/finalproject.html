@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: rgb(112, 196, 196);
+            padding: 10px;
+        }
+        nav, ul, li {
+            text-decoration: none;
+            list-style-type: none;
+            display: inline;
+            margin-bottom: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulir Pendaftaran Saksi Pilkada</h1>
+        <nav>
+            <ul>
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Contact Us">Contact</a></li>
+                <li><a href="#" title="About Us">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <form action="" method="post">
+            <label for="name"><b>Nama Lengkap</b> : </label><input type="text" name="name" id="name" placeholder="Masukan Nama" required><br><hr>
+            <label for="telepon"><b>No. Telepon</b> : </label><input type="tel" name="telepon" id="telepon" placeholder="Masukan No. HP" pattern="62[0-9]{5,20}" required><br><hr>
+            <label for="email"><b>Email : </b></label><input type="email" name="email" id="email" placeholder="Masukan Email" required><br><hr>
+            <label for="posisi"><b>Pilih Posisi Kepanitiaan : </b></label>
+            <select name="posisi" id="posisi" required title="Pilih Posisi">
+                <option value="saksi_tps">Saksi TPS</option>
+                <option value="koordinator_saksi" selected>Koordinator Saksi</option>
+                <option value="pengumpulan_data">Pengumpulan Data</option>
+                <option value="pengamanan_suara">Pengamanan Suara</option>
+                <option value="dokumentasi_bukti">Dokumentasi & Bukti</option>
+            </select>
+            <br><hr>
+            <input type="checkbox" value="setuju" required title="Anda harus menyetujui syarat dan ketentuan">
+            <label for="s&k">Syarat & Ketentuan Berlaku</label><br><hr>
+            <label for="comment" >Komentar</label><br>
+            <textarea name="comment" id="comment" placeholder="Masukan pesan..."></textarea><hr><br>
+            <button type="submit" title="Kirim">Kirim</button>
+            <button type="reset" title="Reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <h4 style="text-align: center;"><u>Website Ini Buat Oleh Salman Mufid :)</u></h4>
+    </footer>
+</body>
+</html>

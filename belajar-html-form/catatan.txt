@@ -1,0 +1,1 @@
+Method Get di disimpan ke alamat query parameter dari action itu sendiriuu
